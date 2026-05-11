@@ -1,4 +1,4 @@
-import React, { useRef,useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser";
 
@@ -105,14 +105,15 @@ const ContactButton = styled.input`
 `;
 
 const Contact = () => {
-  const formRef = useRef();
+  // const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  const [loading, setLoading] = useState(false);
+  const [_, setLoading] = useState(false);
+  console.log(_)
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);

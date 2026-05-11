@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import {
-  FacebookRounded,
-  Instagram,
+  // FacebookRounded,
+  // Instagram,
   LinkedIn,
   Twitter,
 } from "@mui/icons-material";
